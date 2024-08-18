@@ -12,6 +12,14 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #494949;
+}
+
 /* .container{
   margin: 8px;
 }

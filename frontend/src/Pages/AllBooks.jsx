@@ -1,10 +1,13 @@
 import React from "react";
 import books from "../Data/books";
 import Heading from "../Components/Heading";
+import Navbar from "../Common/Navbar";
+import Footer from "../Common/Footer";
 import Button from "../Components/Button";
 
 const AllBooks = () => {
-  return (
+  return (<>
+  <Navbar/>
     <div className="bg-[#DCE0D9] font-lora pb-8">
       <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 2xl:mx-64">
         <div className="pt-20 pb-8 flex justify-center items-center">
@@ -34,6 +37,8 @@ const AllBooks = () => {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 };
 
