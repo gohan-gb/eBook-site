@@ -7,6 +7,7 @@ import AllBooks from "./Pages/AllBooks";
 import LogIn from "./Pages/LogIn"
 import SignUp from "./Pages/SignUp"
 import User from "./Pages/User"
+import SearchPage from "./Pages/SearchPage";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <Route path="/log-in" Component={LogIn} ></Route>
         <Route path="/sign-up" Component={SignUp}></Route>
         <Route path="/user" Component={User}></Route>
+        <Route path="/books" Component={SearchPage}></Route>
+
       </Routes>
     </>
   );

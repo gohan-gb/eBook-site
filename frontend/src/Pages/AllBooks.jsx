@@ -21,17 +21,16 @@ const AllBooks = () => {
         <div className="flex flex-wrap justify-center items-center">
           {books.map((item, index) => {
             return (
-              <div key={index} className="m-2 flex flex-col justify-center items-center h-96 w-72 lg:w-60 border-solid border-[#595959]  border-2 rounded-xl pb-8">
+              <div key={index} className="my-4 mx-px sm:m-2 flex flex-col justify-center items-center min-h-32 w-24 sm:h-96 sm:w-72 lg:w-60 border-solid border-[#595959]  border-2 rounded-xl p-1 sm:pb-8">
                 <img
                   src={item.imageUrl}
-                  className="p-4 max-h-60"
+                  className="sm:p-4 mt-2 p-0 max-h-20  sm:max-h-60"
                   alt="book-cover"
                 />
-                <h3>
-                  Book name: <br />
-                  <span className="font-semibold">{item.title}</span>
-                </h3>
-                <h4>
+          
+                  <span className="text-center text-xs sm:text-lg font-semibold">{item.title}</span>
+                
+                <h4 className="hidden sm:block">
                   Author: <br />
                   <span className="font-semibold">{item.author}</span>
                 </h4>

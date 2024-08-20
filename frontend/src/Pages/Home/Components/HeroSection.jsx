@@ -1,7 +1,7 @@
 import React from "react";
 import Button from '../../../Components/Button'
 import { MdFileUpload } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -21,10 +21,12 @@ const Home = () => {
             Sign up for free right now to upload, review and share your e-books and experiences with us.
           </p>
           <div className="mb-8 flex justify-center sm:justify-start">
-          <Button width='135px' text="Explore books" />
+          <Link to='/all-books'><Button width='135px' text="Explore books" /></Link>
+          <Link to='/log-in'>
           <button className="font-montserrat border border-solid border-black rounded-md bg-[#DCE0D9] text-black hover:font-semibold hover:bg-[#f6faf3] w-32 py-2 duration-100 ml-4">
             <nobr className='flex justify-center items-center'> Upload books</nobr>
           </button>
+          </Link>
           </div>
         </div>
         <img
