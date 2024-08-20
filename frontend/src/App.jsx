@@ -18,7 +18,7 @@ function App() {
         <Route path="/log-in" Component={LogIn} ></Route>
         <Route path="/sign-up" Component={SignUp}></Route>
         <Route path="/user" Component={User}></Route>
-        <Route path="/books" Component={SearchPage}></Route>
+        <Route path="/search/:search" Component={SearchPage}></Route>
 
       </Routes>
     </>

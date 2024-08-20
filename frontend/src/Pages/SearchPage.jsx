@@ -7,20 +7,13 @@ import Footer from "../Common/Footer";
 import SearchBar from "../Components/SearchBar";
 
 const SearchPage = () => {
-  const [search, setSearch] = useState("");
-
-  const handleChange = (e) => {
-    setSearch(e.target.value);
-  };
-
-  console.log(search);
-
-  const { text } = useParams();
+ 
+  const { search } = useParams();
 
   const searchData = books.filter((item) => {
     return (
-      item.title.toLowerCase().includes(search) == text ||
-      item.author.toLowerCase().includes(search) == text
+      item.title.toLowerCase() == search ||
+      item.author.toLowerCase() == search
     );
   });
 
@@ -30,12 +23,9 @@ const SearchPage = () => {
 
       <div className="bg-[#DCE0D9] font-lora pb-8">
         <div className="mx-4 sm:mx-8 md:mx-16 lg:mx-32 xl:mx-64 2xl:mx-64">
-          <div className="pt-20">
-            <SearchBar />
-          </div>
-          <div className="pt-8 pb-8 flex justify-center items-center">
+          <div className="pt-20 pb-8 flex justify-center items-center">
             <Heading frontText="search result for :" />{" "}
-            <h2 className="font-bold text-2xl underline">{` `}</h2>
+            <h2 className="font-bold text-2xl underline">{` ${search} `}</h2>
           </div>
 
           <div className="flex flex-wrap justify-center items-center">

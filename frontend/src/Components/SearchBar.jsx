@@ -23,7 +23,7 @@ const SearchBar = () => {
           placeholder="Search for a book"
         />
 
-        <Link to >
+        <Link to={`/search/${search}`} >
         <button className="border-2 border-solid border-[#808F85] active:border-white rounded-sm ml-px">
           <CiSearch color="#595959" size="36px" />
         </button>
