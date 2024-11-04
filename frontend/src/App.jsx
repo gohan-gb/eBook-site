@@ -8,6 +8,7 @@ import LogIn from "./Pages/LogIn"
 import SignUp from "./Pages/SignUp"
 import User from "./Pages/User"
 import SearchPage from "./Pages/SearchPage";
+import Admin from "./Pages/Admin/Admin"
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
         <Route path="/sign-up" Component={SignUp}></Route>
         <Route path="/user" Component={User}></Route>
         <Route path="/search/:search" Component={SearchPage}></Route>
-
+        <Route path="/search" Component={SearchPage}></Route>
+        <Route path="/admin" Component={Admin}>  </Route>
       </Routes>
     </>
   );
